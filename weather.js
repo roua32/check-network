@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.navigator.geolocation.getCurrentPosition((position) => {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a0143a9ab90de72333d7e11ae611b331&units=metric    ²`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=a0143a9ab90de72333d7e11ae611b331&units=metric`;
     fetchAndDisplayData(url);
   });
 });
